@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Ejemplo</title>
+</head>
+<body>
+   <h1>Ejemplo</h1>
+   <canvas id="miCanvas" width="200" height="100"></canvas>
+   <script>
+       var c = document.getElementById("miCanvas");
+       var ctx = c.getContext("2d");
+       ctx.moveTo(0, 100);
+       ctx.lineTo(200, 0);
+       ctx.stroke();
+   </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registro</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Registro</legend>
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" required />
+        </p>
+        <p>
+          <label for="u_email">Correo Electronico</label>
+          <input id = "u_id" type="email" placeholder="Ingrese su correo electronico"size="50px" required />
+        </p>
+        <p>
+          <label for="edad ">Edad </label>
+          <input type="text" name="Edad" required />
+        </p>
+     </p>
+           <label for="Genero ">Genero </label>
+           <br>
+          <input type="radio" id="femenino" value="f" name="femenino">
+           <label for="femenino">femenino</label>
+          <input type="radio" id="masculino" value="m" name="masculino">
+          <label for="masculino">masculino</label>
+</p>
+        <p>
+          <label for="tipo">Recomendado por</label>
+          <br>
+          <select name="tipo">
+            <option value="musico">Google</option>
+            <option value="pintor"> amigos</option>
+            <option value="actor"> Redes Sociales</option>
+          </select>
+        </p>
+        <p>
+          <label for="comentario">Comentario</label><br />
+          <textarea name="comentario" cols="40" rows="5"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" name="terminos" id="terminos" required />
+          <label for="terminos">Acepto términos y condiciones*</label><br />
+        </p>
+        <p>
+          <input type="submit" value="Registrar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Ejemplo</title>
+     </head>
+<body>
+     <p>
+          <h4>checkbox</h4>
+          <p>
+               El checkbox es una caja le permite al usuario activar una opción o no. Para crear un checkbox empleamos la etiqueta input con el atributo type="checkbox". Es importante colocar una etiqueta (label) y enlazarla con el atributo for al checkbox a través de su id, donde el valor del for y el valor del id deben coincidir. A continuación te mostramos un ejemplo:
+          </p>
+          <input type="checkbox" id="terminos" value="yes">
+          <label for="terminos">Acepto los términos y condiciones</label>
+
+     </p>
+     <p>
+          <h4>contraseñas</h4>
+          <p>
+               Para las contraseñas usamos la etiqueta  input con el atributo type="password", lo que hará que no se muestren los caracteres cuando el usuario escribe.
+          </p>
+          <label for="nombre">Contraseña</label>
+          <input type="password" name="nombre" />
+     </p>
+     
+     <p>
+          <h4>radio</h4>
+          <p>
+               el radio o radio button es una entrada que permite seleccionar exclusivamente entre un conjunto de alternativas. Para crear un radio button usamos la etiqueta input con el atributo type="radio". Es importante colocar una etiqueta (label) y enlazarla con el atributo for al checkbox con el id, donde el valor del for y el valor del id deben coincidir. A continuación te mostramos un ejemplo:
+          </p>
+          <input type="radio" id="manana" value="M" name="horario">
+          <label for="manana">Mañana</label>
+          <input type="radio" id="tarde" value="T" name="horario">
+          <label for="tarde">Tarde</label>
+     </p>
+     <p>
+          <h4>listas con grupos</h4>
+          <p>
+               para crear una lista con grupos utilizamos la etiqueta select y la etiqueta optgroup para definir los grupos de opciones. A continuación te mostramos un ejemplo:
+          </p>
+          <label for="ciudades">Cuidad</label>
+          <select name="ciudades">
+               <optgroup label="Latinoamerica">
+               <option value="caracas">Caracas</option>
+               <option value="bogota">Bogotá</option>
+               </optgroup><optgroup label="Europa">
+               <option value="madrid">Madrid</option>
+                <option value="londres">Londres</option>
+                </optgroup>
+          </select>
+     </p>
+     <p>
+          <h4>lista de selección múltiple </h4>
+          <p>
+               Para crear una lista de selección múltiple usamos la etiqueta  select que permite seleccionar múltiples elementos. El primer el elemento se selecciona con un click, pero los adicionales se seleccionan usando (ctrl+click) ó (cmd+click) según el navegador y sistema operativo. El siguiente código es una ilustración de una lista de selección múltiple:
+          </p>
+          <label for="tipo">Tipo</label><br>
+          <select name="tipo" multiple="true">
+           <option value="musico">Músico</option>
+           <option value="pintor">Pintor</option>
+            <option value="actor">Actor</option>
+           <option value="escultor">Escultor</option>
+          </select>
+     </p>
+
+</body>
+
+
+</html>
