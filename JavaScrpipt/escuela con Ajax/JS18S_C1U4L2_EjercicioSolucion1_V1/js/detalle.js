@@ -11,7 +11,7 @@ $(document).ready(function () {
     eventos = resultado.eventos;
 
     //obteniendo el id del url
-    var id = location.search.match(/id=(\d)*/)[1]
+    var id = 2//location.search.match(/id=(\d)*/)[1]
 
     evento = eventos.find(function (element) {
       return element.id == id

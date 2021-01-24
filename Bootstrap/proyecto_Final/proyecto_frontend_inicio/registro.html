@@ -13,10 +13,11 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
+    <script src="./javascripts/script.js"></script>
 
-
-    <title>Oye - Inicio de Sesión</title>
+    <title>Oye.com - registro</title>
   </head>
   <body>
     <div class="container-pri">
@@ -42,7 +43,7 @@
           <ul>
             <li class="nav ">
             
-              
+             
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Contacto</button>
               <!-- Modal -->
@@ -56,17 +57,17 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                 ramirezvivi0102@gmail.com.
-                 <br>
-                 + 3335555565
+                        ramirezvivi0102@gmail.com.
+                       <br>
+                        + 3335555565
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                    
                   </div>
-          </div>
-        </div>
-</div>
+                </div>
+              </div>
+            </div>
               <a class="btn btn-primary" href="login.html" role="button">Inicio de Sesion</a>
               <a class="btn btn-primary" href="registro.html" role="button">Registro</a>
              
@@ -76,40 +77,94 @@
           
         </div>
      
-    </div>
     </div> 
     
+    </nav>
     <main>
-      <div class="py-5 text-center bg-light">
+       <div class="container-registro">
+          <div class="row ">
+              <div class="col ">
+            
+      <div class="py-5 bg-light">
         <div class="col-md-6 m-auto">
-            <form class="form-signin">
-                <label for="inputEmail" class="sr-only">Email</label>
-                <input
-                  type="email"
-                  id="inputEmail"
-                  class="form-control"
-                  placeholder="Email"
-                  required
-                  autofocus
-                />
-                <label for="inputPassword" class="sr-only">Contraseña</label>
-                <input
-                  type="password"
-                  id="inputPassword"
-                  class="form-control"
-                  placeholder="Contraseña"
-                  required
-                />
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
-                
-                
-              </form>
+          <h2 class="mb-3">Registro</h2>
+          <form action="">
+            
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="nombre" id="nombre">
+              <span id="errorNombre" class="error"></span>
+            </p>
+            <p>
+              <label>Email</label>
+              <input type="text" name="email" id="email">
+              <span id="errorEmail" class="error"></span>
+            </p>
+            <p>
+              <label>Contraseña</label>
+              <input type="password" name="contrasena" id="contrasena">
+              <span id="errorContrasena" class="error"></span>
+            </p>
+            <p>
+              <label>Contraseña (Confirmación)</label>
+              <input type="password" name="confirmacion" id="confirmacion">
+              <span id="errorConfirmacion" class="error"></span>
+            </p>
+            
+            <p>
+              <label for="exampleFormControlSelect1">Genero musical favorito *</label>
+            </p>
+            <p>
+              <select name="musical" id="musical">
+                <option selected>Seleccione...</option>
+                <option value="1">Bachata</option>
+                <option value="2">Bailables</option>
+                <option value="3">Romanticas</option>
+                <option value="1">Rancheras</option>
+                <option value="2">Pop</option>
+                <option value="3">Musica popular</option>
+              </select>
+            </p>
               
-        </div>
+            
+            <p>
+              <label for="exampleFormControlSelect1"><strong>Edad*</strong></label> 
+            </p>
+            <p>
+              <p>Género <span id="errorGenero" class="error"></span></p>
+              <p>
+                <input type="radio" name="edad" id="m" value="m">
+                <label for="m">Menor a 20</label>
+              </p>
+              <p>
+                <input type="radio" name="edad" id="my" value="my">
+                <label for="f">20 a 40</label>
+              </p>
+              <p>
+                <input type="radio" name="edad" id="md" value="md">
+                <label for="f">Mayor a 50</label>
+          
+              </p> 
+            </p>
+
+            
+            <p>
+              <label for="terminos">
+                <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta términos y condiciones</label>
+                <span id="errorTerminos" class="error"></span>
+            </p>
         
+            <p>
+              <input type="submit" value="Continuar" onclick="return validar(this.form)">
+            </p>
+        
+        
+          </form>
+          <script src="./assets/script.js"></script>
+        </div>
       </div>
-      <div>
-        <button type="button" class="btn btn-primary btn-sm ">Continuar </button>
+          </div>
+          </div>
       </div>
     </main>
 

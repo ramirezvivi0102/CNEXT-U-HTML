@@ -1,5 +1,6 @@
 {
-	"canciones": [
+	"canciones":
+	 [
 		{
 			"nombre": "vive",
 			"ruta": "uno.mp3",

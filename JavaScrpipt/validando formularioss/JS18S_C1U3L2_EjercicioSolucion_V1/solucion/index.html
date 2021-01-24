@@ -6,34 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ejemplo</title>
+
+  <style>
+    .error {
+      color: red
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Formulario</h1>
-  <form action="">
+  <h1>Registro</h1>
+  <form action="" >
     <p>
       <label>Nombre</label>
       <input type="text" name="nombre" id="nombre">
+      <span id="errorNombre" class="error"></span>
     </p>
     <p>
       <label>Email</label>
       <input type="text" name="email" id="email">
+      <span id="errorEmail" class="error"></span>
     </p>
     <p>
       <label>Contraseña</label>
       <input type="password" name="contrasena" id="contrasena">
+      <span id="errorContrasena" class="error"></span>
     </p>
     <p>
       <label>Contraseña (Confirmación)</label>
       <input type="password" name="confirmacion" id="confirmacion">
+      <span id="errorConfirmacion" class="error"></span>
     </p>
 
     <p>
-      <p>Género</p>
+      <p>Género <span id="errorGenero" class="error"></span></p>
       <input type="radio" name="genero" id="m" value="m">
       <label for="m">Masculino</label>
       <input type="radio" name="genero" id="f" value="f">
       <label for="f">Femenino</label>
+
     </p>
 
     <p>
@@ -44,11 +55,13 @@
         <option value="2">Brasil</option>
         <option value="3">México</option>
       </select>
+      <span id="errorPais" class="error"></span>
     </p>
 
     <p>
       <label for="terminos">
         <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta términos y condiciones</label>
+        <span id="errorTerminos" class="error"></span>
     </p>
 
     <p>
@@ -58,7 +71,7 @@
 
   </form>
 
-  <script src="./javascripts/main.js"></script>
+  <script src="./javascripts/script.js"></script>
 </body>
 
 </html>
