@@ -44,15 +44,14 @@ function limpiarErrores(){
       formulario.confirmacion.focus();
       return false;
     }
-  
-    if (formulario.genero.value == "") {
-      document.getElementById("errorGenero").innerText = "Campo obligatorio";
-      return false;
-    }
-  
     if (formulario.musical.value == "") {
-      document.getElementById("errormusical").innerText = "Campo obligatorio";
-      formulario.musical.focus();
+        document.getElementById("errormusical").innerText = "Campo obligatorio";
+        formulario.musical.focus();
+        return false;
+      }
+  
+    if (formulario.edad.value == "") {
+      document.getElementById("erroredad").innerText = "Campo obligatorio";
       return false;
     }
   
