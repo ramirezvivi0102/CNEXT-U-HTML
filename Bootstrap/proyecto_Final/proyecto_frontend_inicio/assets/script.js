@@ -8,12 +8,6 @@ function limpiarErrores(){
 
     limpiarErrores();
   
-    if (formulario.nombre.value.trim().length == 0) {
-      document.getElementById("errorNombre").innerText = "Campo obligatorio";
-      formulario.nombre.focus();
-      return false;
-    }
-  
     if (formulario.nombre.value.trim().length < 3) {
       document.getElementById("errorNombre").innerText = "Campo inválido";
       formulario.nombre.focus();
@@ -41,7 +35,7 @@ function limpiarErrores(){
   
     if (formulario.contrasena.value != formulario.confirmacion.value) {
       document.getElementById("errorConfirmacion").innerText = "Confirmación no coincide";
-      formulario.confirmacion.focus();
+       formulario.confirmacion.focus();
       return false;
     }
     if (formulario.musical.value == "") {

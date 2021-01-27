@@ -43,19 +43,26 @@
       width: 330px; 
       height: 500px;
     }
-    /* css de la tabla del index */
+    /* css del login*/
     
+    .container-sesionInicio{
+      justify-content:center;
+      background-color:#DBE0E3 ;
+      width: 100%;
+      margin:0 auto; 
+      padding: 20px 40px 20px  40px; 
+    }
    
     /* css del encabezado */
     
     #color2{color:blue;}
 
     .container-pri{
-      padding: 20px 40px 20px  40px;
+      padding: 20px 20px 20px  20px;
       justify-content: center;
-      margin:10 auto; 
-      
+      margin:auto; 
       }
+      
       .button{
        justify-content: center;
        border: 10px;
@@ -112,15 +119,14 @@
       
        /* css de registro */
       .container-registro{
-
-        background-color:#C0C0C0;
-        width: 1200px; 
-        height: 600px;
+        width: 100%; 
         margin:0 auto; 
         padding: 20px 40px 20px  40px;
         justify-self:center;
         
+        
       }
+
       .error {
         color: red
       }

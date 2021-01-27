@@ -15,6 +15,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css"/>
     <script src="./javascripts/script.js"></script>
 
     <title>Oye.com - registro</title>
@@ -23,12 +24,10 @@
     <div class="container-pri">
       <div class="container-fluid bg-light ext-white py-0 mt-0">
         <div class="row justify-content-between ">
-  
           <ul class="justify-content-right">
             <li class ="nav">
               <img src="imagenes/logo.png" class="img-responsive" alt="Imagen responsive">
               <h1 class="display-4 font-weight-bold text-primary py-0 ">OYE</h1>
-        
             </li>
           </ul>
         
@@ -36,14 +35,11 @@
             <li class="nav">
               <a class="flex-sm-fill text-sm-center nav-link  " href="index.html">Inicio</a>
               <a class="flex-sm-fill text-sm-center nav-link  " href="canciones.html">Canciones </a>
-           
             </li>
           </ul>
   
           <ul>
             <li class="nav ">
-            
-             
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Contacto</button>
               <!-- Modal -->
@@ -61,111 +57,82 @@
                        <br>
                         + 3335555565
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                   
-                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
               </div>
             </div>
               <a class="btn btn-primary" href="login.html" role="button">Inicio de Sesion</a>
               <a class="btn btn-primary" href="registro.html" role="button">Registro</a>
-             
-  
             </li>
-          </ul>
-          
+          </ul> 
         </div>
-     
-    </div> 
-    
-    </nav>
+      </div> 
+    </div>
     <main>
        <div class="container-registro">
           <div class="row ">
               <div class="col ">
-            
-      <div class="py-5 bg-light">
-        <div class="col-md-6 m-auto">
-          <h2 class="mb-3">Registro</h2>
-          <form action="">
-            
-            <p>
-              <label>Nombre</label>
-              <input type="text" name="nombre" id="nombre">
-              <span id="errorNombre" class="error"></span>
-            </p>
-            <p>
-              <label>Email</label>
-              <input type="text" name="email" id="email">
-              <span id="errorEmail" class="error"></span>
-            </p>
-            <p>
-              <label>Contraseña</label>
-              <input type="password" name="contrasena" id="contrasena">
-              <span id="errorContrasena" class="error"></span>
-            </p>
-            <p>
-              <label>Contraseña (Confirmación)</label>
-              <input type="password" name="confirmacion" id="confirmacion">
-              <span id="errorConfirmacion" class="error"></span>
-            </p>
-            
-            <p>
-              <label for="exampleFormControlSelect1">Genero musical favorito *</label>
-            </p>
-            <p>
-              <select name="musical" id="musical">
-                <option selected>Seleccione...</option>
-                <option value="1">Bachata</option>
-                <option value="2">Bailables</option>
-                <option value="3">Romanticas</option>
-                <option value="1">Rancheras</option>
-                <option value="2">Pop</option>
-                <option value="3">Musica popular</option>
-              </select>
-            </p>
-              
-            
-            
-              <!-- <label for="exampleFormControlSelect1"><strong>Edad*</strong></label>  -->
-            
-            <p>
-              <p>Edad <span id="erroredad" class="error"></span></p>
-              <p>
-                <input type="radio" name="edad" id="m" value="m">
-                <label for="m">Menor a 20</label>
-              </p>
-              <p>
-                <input type="radio" name="edad" id="my" value="my">
-                <label for="my">20 a 40</label>
-              </p>
-              <p>
-                <input type="radio" name="edad" id="md" value="md">
-                <label for="md">Mayor a 50</label>
-          
-              </p> 
-            </p>
-
-            
-            <p>
-              <label for="terminos">
-                <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta términos y condiciones</label>
-                <span id="errorTerminos" class="error"></span>
-            </p>
-        
-            <p>
-              <input type="submit" value="Continuar" onclick="return validar(this.form)">
-            </p>
-        
-        
-          </form>
-          <script src="./assets/script.js"></script>
+                <div class="py-5 bg-light">
+                  <div class="col-md-6 m-auto">
+                    <h2 class="mb-3">Registro</h2>
+                    <form action="">
+                      <p>
+                        <label>Email*</label><br>
+                        <input type="text" name="email" id="email" size="50">
+                        <span id="errorEmail" class="error"></span>
+                      </p>
+                      <p>
+                        <label>Contraseña*</label><br>
+                        <input type="password" name="contrasena" id="contrasena" size="50">
+                        <span id="errorContrasena" class="error"></span>
+                      </p>
+                      <p>
+                        <label> Confirmación deContraseña*</label><br>
+                        <input type="password" name="confirmacion" id="confirmacion" size="50">
+                        <span id="errorConfirmacion" class="error"></span>
+                      </p>
+                      <p>
+                        <label for="exampleFormControlSelect1">Genero musical favorito*</label><br>
+                        <select name="musical" id="musical"><br> 
+                          <p><span id="errormusical" class="error"></span></p>
+                          <option selected>Seleccione...</option>
+                          <option value="1">Bachata</option>
+                          <option value="2">Bailables</option>
+                          <option value="3">Romanticas</option>
+                          <option value="1">Rancheras</option>
+                          <option value="2">Pop</option>
+                          <option value="3">Musica popular</option>
+                        </select>
+                      </p>
+                      <p>
+                        <label for="exampleFormControlSelect1"><strong>Edad*</strong></label>
+                        <span id="erroredad" class="error"></span><br> 
+                          <input type="radio" name="edad" id="m" value="m">
+                          <label for="m">Menor a 20</label>
+                          <br>
+                          <input type="radio" name="edad" id="my" value="my">
+                          <label for="my">20 a 40</label>
+                          <br>
+                          <input type="radio" name="edad" id="md" value="md">
+                          <label for="md">Mayor a 50</label>
+                      </p> 
+                      <p>
+                        <label for="terminos">
+                          <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta los terminos de uso*</label>
+                          <span id="errorTerminos" class="error"></span>
+                      </p>
+                      <p>
+                        <input type="submit" value="Continuar" onclick="return validar(this.form)">
+                      </p>
+                    </form>
+                    <script src="./assets/script.js"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
-          </div>
-          </div>
-      </div>
     </main>
 
     <footer class="container-fluid py-1 bg-info text-white">
