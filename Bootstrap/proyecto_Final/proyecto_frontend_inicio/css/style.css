@@ -53,14 +53,6 @@
       padding: 20px 40px 20px  40px; 
     }
    
-    /* css del encabezado */
-    
-    #color2{color:blue;}
-    
-      .button{
-       justify-content: center;
-       border: 10px;
-      }
       /* css de canciones */
       .container-can{
         justify-content:center;
