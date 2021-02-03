@@ -10,7 +10,7 @@
 
 function cargarDatos() {
   $.ajax({
-    url: "http://127.0.0.1:5500/datos.json"
+    url: "http://127.0.0.1:5500/Ajax%20con%20librerias/JS18S_C1U4L2_Screencast2_AJAX_JQuery_V1/codigo_inicial/datos.json"
   }).done(function(respuesta){
     $("#contenido").html("Hola: " + respuesta.nombre);
     $("#contenido").slideDown("slow");
