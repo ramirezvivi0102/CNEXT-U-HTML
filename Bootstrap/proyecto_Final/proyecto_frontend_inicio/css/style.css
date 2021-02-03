@@ -1,0 +1,121 @@
+       
+       /* css index */
+
+    .logo{ display:block; height:50px; width: 50px; }
+
+    body {
+        font-family: Arial, Helvetica, Verdana, sans-serif;
+      }
+      
+      p {
+        font-family: Georgia, Cambria, Times, "Times New Roman", serif;
+      }
+
+      p {
+        width:100%;
+	  	  max-width:600px;
+		    padding:10px 10px;
+      } 
+
+       h1 {
+        widows: 100%;
+		    max-width:600px;
+        padding:10px 10px;
+        font-weight: bold;
+      }
+      /* css del carrusel */
+
+    .container-car{
+      background-color:#C0C0C0;
+      width: 1100px; 
+      height: 400px;
+      margin:0 auto; 
+      padding: 20px 40px 20px  20px;
+      justify-self:center;
+    }
+    
+    .c1 {
+      width: 600px; 
+      height: 500px;
+    }
+    .c2 {
+      
+      width: 330px; 
+      height: 500px;
+    }
+    /* css del login*/
+    
+    .container-sesionInicio{
+      justify-content:center;
+      background-color:#DBE0E3 ;
+      width: 100%;
+      margin:0 auto; 
+      padding: 20px 40px 20px  40px; 
+    }
+   
+      /* css de canciones */
+      .container-can{
+        justify-content:center;
+        background-color:#DBE0E3 ;
+        width: 80%;
+        margin:0 auto; 
+       padding: 20px 40px 20px  40px; 
+      }
+    
+        .c5 {
+          margin:10px 0px 0px 0px; 
+          padding: 20px 20px 20px  20px;
+          color: black;
+          background-color: #E6EBE0;
+        }
+        
+        .c6 {
+          margin:0px 0px 10px 0px; 
+          padding: 20px 20px 20px  20px;
+          color: black;
+          background-color: #F4F1BB;
+        }
+
+         .c6, .c5 {
+          width: 100%;
+          
+        }
+       
+        @media (min-width: 600px) {
+
+          .c5, .c6 {
+            width: 100%;
+          }
+        }
+        @media (min-width: 600px) {
+        
+           .c5, .c6 {
+            width: 100%;
+          }
+        
+        }
+        
+        
+      audio{
+        padding-top: 10px;
+        width: 100%;
+        margin: auto;
+        display: block;
+      }
+      
+       /* css de registro */
+      .container-registro{
+        width: 100%; 
+        margin:0 auto; 
+        padding: 20px 40px 20px  40px;
+        justify-self:center;
+        
+        
+      }
+
+      .error {
+        color: red
+      }
+      
+     
+      
