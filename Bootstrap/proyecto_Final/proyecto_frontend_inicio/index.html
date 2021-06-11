@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css"/>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -22,19 +23,73 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- <script src="assets/tabla.js"></script> -->
   <script src="assets/funciones.js"></script>
   <title>Oye.com</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <ul class="nav navbar-nav navbar-left">
+                <li class ="nav">
+                  <img src="imagenes/logo.png" class="img-responsive" alt="Imagen responsive">
+                  <h1 class="display-4 font-weight-bold text-primary py-0 ">OYE</h1>
+                </li>
+              </ul>
+            </div>
+              <ul class=" nav btn-group-justified">
+                <li class="nav">
+                  <a class="flex-sm-fill text-sm-center nav-link  " href="index.html">Inicio</a>
+                  <a class="flex-sm-fill text-sm-center nav-link  " href="canciones.html">Canciones </a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right btn-group-justified">
+                <li class="nav ">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Contacto</button>
+                  <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              ramirezvivi0102@gmail.com.
+                              <br>
+                              + 3335555565
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      <a class="btn btn-primary" href="login.html" role="button">Inicio de Sesion</a>
+                      <a class="btn btn-primary" href="registro.html" role="button">Registro</a>
+                </li>
+              </ul>
+          </div>
+      </nav>
+
+
+
+<!--
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <div class="container-fluid">
           <div class="navbar-header">
             <ul class="nav navbar-nav navbar-left">
               <li class ="nav">
-                <img src="imagenes/logo.png" class="img-responsive" alt="Imagen responsive">
-                <h1 class="display-4 font-weight-bold text-primary py-0 ">OYE</h1>
+				<span class="navbar-toggler-icon"></span>
+                <!-- <img src="imagenes/logo.png" class="img-responsive" alt="Imagen responsive"> -->
+                <!-- <h1 class="display-4 font-weight-bold text-primary py-0 ">OYE</h1>
               </li>
             </ul>
           </div>
@@ -45,11 +100,11 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right btn-group-justified">
-              <li class="nav ">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Contacto</button>
+              <li class="nav "> -->
+               <!-- Button trigger modal-->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Contacto</button> -->
                 <!-- Modal -->
-                  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                   <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
@@ -73,8 +128,8 @@
                     <a class="btn btn-primary" href="registro.html" role="button">Registro</a>
               </li>
             </ul>
-        </div>
-    </nav>
+         </div>
+    </nav> -->
 
 
 </header>
@@ -120,7 +175,6 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-4 position-static text-center ">
        <h1>Top3</h1>
-       <button class="btn" id="boton">js</button>
         <thead>
           <tr>
             <th>Nombre</th>
@@ -128,20 +182,8 @@
 
           </tr>
         </thead>
-        <tbody id="canciones">
-          <tr>
-            <td id="color2">  </td>
-            <td>   </td>
-          </tr>
-          <tr>
-            <td id="color2"> </td>
-            <td> </td>
+        <tbody id="contenido">
 
-          </tr>
-          <tr>
-            <td id="color2">  </td>
-            <td> </td>
-          </tr>
         </tbody>
       </div>
       </div>
@@ -155,7 +197,5 @@
   </div>
 </footer>
 </body>
-
-
 
 </html>

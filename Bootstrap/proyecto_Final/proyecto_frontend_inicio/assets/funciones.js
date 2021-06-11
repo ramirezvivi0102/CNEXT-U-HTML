@@ -1,61 +1,59 @@
 
-//  boton contacto
+// js  boton contacto
 function abrir(){
     $('#ventana').modal('show');
   }
 
-function traerDatos(){
+  //js tabla index.
+
+ function traerDatos(){
     //Carga los datos que estan en el JSON (info.json) usando AJAX
     $.ajax({
-		url: "datos.json",
-		method: "GET"
+		url: "datos.json"
 	  }).done(function (resultado) {
 
 		//Guarda el resultado en variables
-		hoy = resultado.fechaActual;
+		// resultado = JSON.parse(resultado);
+		// reproducciones = resultado.reproduciones;
 		canciones= resultado.canciones;
 
+		// Ordena el JSON de las canciones por numero de reproducciones
+
+		  canciones = canciones.sort(function(a,b){
+
+			if(b.reproducciones > a.reproducciones){
+				return 1;
+			} else{
+				if(b.reproducciones < a.reproducciones){
+					return -1;
+				}else{
+					return 0;
+				}
+			}
+		  });
+
+		// Generar contenido dinamico
+		var htmlTablaDinamica = '';
+
 		//Selecciona los eventos que sean anteriores a la fecha actual del JSON
-		for(var i = 0; i < canciones.length; i++){
-		  if (canciones[i].fecha < hoy){
-			canciones.push(canciones[i]);
-		  }
+		for(var i = 0; i < 3; i++){
+
+			htmlTablaDinamica += `
+				<tr>
+				<td id='color22'>${ canciones[i].nombre}  </td>
+                <td>  <audio  src='${ canciones[i].ruta} ' controls='controls' type='audio/mpeg' preload='preload' > </audio>  </td>
+                </tr>
+				   `
 		}
 
-		//Ordena los eventos segun la fecha (los mas recientes primero)
-		canciones = canciones.sort(function(x,y){
-		  if (x.fecha < y.fecha){
-			return 1;
-		  }
-		  return -1;
-		});
-
-		//Crea un string que contenga el HTML que describe el detalle del evento
-		var html = "cancines.html"
-
-		//Recorre el arreglo y concatena el HTML para cada evento
-	  //   for(var j = 0; j < canciones.length; j++){
-	  //     html += `
-	  //             <h2>${canciones[j].nombre}</h2>
-	  //             <p>${canciones[j].ruta}</p>
-	  //             <p>Reproducciones: ${canciones[j].reproducciones}</p
-	  //             <p>Icono: ${canciones[j].icono}</p>
-
-
-	  //   }
-
-		//Modifica el DOM agregando el html generado
-		//document.getElementById("canciones").innerHTML = html
-
+		 // Modifica el DOM agregando el html generado
+	     document.getElementById("contenido").innerHTML = htmlTablaDinamica
 	  })
-};
+}
 
-
-$(document).ready(function () {
-	traerDatos()
-});
-
-console.log('correcto');
+$(document).ready(function(){
+	traerDatos();
+})
 
 
 
