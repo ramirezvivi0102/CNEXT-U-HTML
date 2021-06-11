@@ -1,0 +1,165 @@
+body
+{
+    background: black;
+}
+
+header
+{
+    background: black;
+    margin-bottom: 30px
+}
+
+.page-title
+{
+    color: white;
+    text-align: center;
+}
+
+.page-subtitle
+{
+    color: white;
+    text-align: right;
+}
+
+header .redes
+{
+    margin-left: 470px;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    header .redes
+    {
+        margin-left: 470px;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px)
+{
+    header .redes
+    {
+        margin-left: 400px;
+        bottom: 0;
+        right: 0;
+        padding: 1px;
+    }
+} 
+
+@media only screen and (min-width: 768px) and (max-width:991px)
+{
+    header .redes
+    {
+        margin-left: 300px;
+        bottom: 0;
+        right: 0;
+        padding: 1px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:767px)
+{
+    header .redes
+    {
+        margin-left: 0px;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    header .redes
+    {
+        margin-left: 0px;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+    }
+}
+
+header .logo
+{
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+}
+
+.social
+{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+nav
+{
+    background: #484848;
+}
+
+.nav-item
+{
+    font-size: 25px;
+}
+
+
+.main
+{
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.post
+{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid #999;
+}
+
+.post .post-title a
+{
+  color: #333;
+}
+
+.post .thumb
+{
+  margin-right: 10px;
+  width: 40%;
+}
+
+.post .thumb img
+{
+  width: 100%;
+}
+
+.post .button_container
+{
+  width: 100%;
+}
+
+.img-formulario {
+	width: 55px;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px)
+{
+   .post .thumb
+   {
+       width: 100%;
+       margin-bottom: 20px;
+   } 
+}
+
+.comentario
+{
+    margin-top: 40px;
+}
