@@ -2,56 +2,56 @@
 	"canciones":
 	 [
 		{
-			"nombre": "vive",
-			"ruta": "canciones/uno.mp3",
+			"nombre": "Vive",
+			"ruta": "canciones/Uno.mp3",
 			"reproducciones": 10,
 			"icono": "imagenes/icon_4.svg"
 		},
 		{
-			"nombre": "invierno",
-			"ruta": "canciones/dos.mp3",
+			"nombre": "Invierno",
+			"ruta": "canciones/Dos.mp3",
 			"reproducciones": 30,
 			"icono": "imagenes/icon_1.svg"
 		},
 		{
-			"nombre": "planeta",
-			"ruta": "canciones/tres.mp3",
+			"nombre": "Planeta",
+			"ruta": "canciones/Tres.mp3",
 			"reproducciones": 20,
 			"icono": "imagenes/icon_3.svg"
 		},
 		{
-			"nombre": "suave",
-			"ruta": "canciones/cuatro.mp3",
+			"nombre": "Suave",
+			"ruta": "canciones/Cuatro.mp3",
 			"reproducciones": 80,
 			"icono": "imagenes/icon_2.svg"
 		},
 		{
-			"nombre": "contigo",
-			"ruta": "canciones/cinco.mp3",
+			"nombre": "Contigo",
+			"ruta": "canciones/Cinco.mp3",
 			"reproducciones": 50,
 			"icono": "imagenes/icon_4.svg"
 		},
 		{
-			"nombre": "alas",
-			"ruta": "canciones/seis.mp3",
+			"nombre": "Alas",
+			"ruta": "canciones/Seis.mp3",
 			"reproducciones": 70,
 			"icono": "imagenes/icon_1.svg"
 		},
 		{
-			"nombre": "verde",
-			"ruta": "canciones/siete.mp3",
+			"nombre": "Verde",
+			"ruta": "canciones/Siete.mp3",
 			"reproducciones": 60,
 			"icono": "imagenes/icon_3.svg"
 		},
 		{
-			"nombre": "nuevamente",
-			"ruta": "canciones/ocho.mp3",
+			"nombre": "Nuevamente",
+			"ruta": "canciones/Ocho.mp3",
 			"reproducciones": 90,
 			"icono": "imagenes/icon_1.svg"
 		},
 		{
-			"nombre": "hoy",
-			"ruta": "canciones/nueve.mp3",
+			"nombre": "Hoy",
+			"ruta": "canciones/Nueve.mp3",
 			"reproducciones": 40,
 			"icono": "imagenes/icon_2.svg"
 		}
